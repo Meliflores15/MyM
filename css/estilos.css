@@ -18,6 +18,15 @@
     background-color: #6DCCAA;
 
 }
+.navbar img {
+    height: 90px; /* Ajusta la altura de la imagen */
+    width: auto; /* Mantén las proporciones de la imagen */
+  }
+.imagenradi {
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Opcional: agrega bordes redondeados */
+  }
 
 .TITULO{
     text-align: end;
