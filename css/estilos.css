@@ -1,36 +1,4 @@
-
-/* Asegura que el navbar esté en el frente */
-.navbar-romantic {
-    position: relative; /* Define la posición para usar z-index */
-    z-index: 10; /* Trae el navbar al frente */
-}
-
-/* Fondo del menú desplegable */
-.navbar-menu {
-    background-color: rgba(255, 230, 240, 0.9); /* Fondo semitransparente para el menú */
-    position: absolute; /* Asegura que el menú se posicione en relación al navbar */
-    top: 100%; /* Hace que el menú aparezca debajo del navbar */
-    left: 0;
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    z-index: 20; /* Trae el menú aún más al frente */
-    padding: 10px 0; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-/* Enlaces del menú desplegable */
-.navbar-menu .nav-link {
-    color: #d63384; /* Color del texto */
-    font-size: 1.2rem; /* Tamaño del texto */
-    font-weight: bold; /* Negrita */
-    text-align: center;
-}
-
-/* Hover en los enlaces */
-.navbar-menu .nav-link:hover {
-    color: #ff4d6d; /* Color más vibrante */
-}
-/* Estilo general */
+/* Estilo General */
 body, html {
     margin: 0;
     padding: 0;
@@ -40,129 +8,47 @@ body, html {
     font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente divertida */
 }
 
-.navbar {
-    background-color: #85D4B7;
-    height: 100px;
-}
-
-.navbar img {
-    height: 90px;
-    width: auto;
-}
-
-.title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #d63384;
-    margin: 20px 0;
-    text-shadow: 2px 2px #ff99c8;
-}
-
-.subtitle {
-    text-align: center;
-    font-size: 1.8rem;
-    color: #d63384;
-    margin-bottom: 20px;
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.image-container img {
-    width: 100%;
-    max-width: 400px;
-    border: 5px solid #d63384;
-    border-radius: 20px;
-    box-shadow: 0px 0px 15px #ff99c8;
-}
-
-/* Imágenes adicionales (ROJO1, ROJO2, ROJO3, ROJO4) */
-.row .col-6 img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    border: 3px solid #d63384;
-}
-
-.custom-container {
-    background-color: #ffe6f0; /* Fondo romántico */
-    border: 5px solid #d63384; /* Borde rosa */
-    border-radius: 20px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    margin: 20px auto; /* Centrar el contenedor */
-    max-width: 600px; /* Ancho máximo del carrusel */
-}
-
-.carousel-inner {
-    border-radius: 15px; /* Bordes redondeados para las imágenes */
-    overflow: hidden; /* Asegura que las esquinas redondeadas sean visibles */
-}
-
-.carousel-inner img {
-    max-height: 400px; /* Altura máxima para las imágenes */
-    object-fit: cover; /* Recorta la imagen manteniendo proporción */
-    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
-}
-
-.subtitle {
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #d63384; /* Color rosa romántico */
-    margin-bottom: 15px;
-    text-shadow: 1px 1px #ff99c8; /* Sombra ligera en el texto */
-}
-
-/* Estilo general del Navbar */
-/* Navbar General */
+/* Navbar */
 .navbar-romantic {
     background: linear-gradient(90deg, #ff9a9e, #fecfef); /* Gradiente rosa suave */
     border-bottom: 3px solid #d63384;
+    position: relative;
+    z-index: 10; /* Asegura que el navbar esté al frente */
 }
 
-
-/* Logo del Navbar */
 .navbar-logo {
     height: 60px;
     width: auto;
-    border-radius: 10px; /* Bordes redondeados */
-    margin-right: 10px; /* Espaciado con el texto */
+    border-radius: 10px;
+    margin-right: 10px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
 }
 
-/* Texto del Navbar */
 .navbar-brand-text {
     font-family: 'Dancing Script', cursive, sans-serif; /* Fuente romántica */
-    font-size: 2rem; /* Tamaño del texto */
+    font-size: 2rem;
     font-weight: bold;
     color: #fff; /* Texto blanco */
     text-shadow: 2px 2px #d63384; /* Sombra para resaltar */
 }
 
-/* Menú Desplegable */
 .navbar-menu {
-    background-color: #ffe6f0; /* Fondo romántico */
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interno */
+    background-color: rgba(255, 230, 240, 0.9); /* Fondo semitransparente */
+    border-radius: 15px;
+    padding: 10px;
+    z-index: 20;
 }
 
-/* Estilo de los Enlaces */
 .navbar-nav .nav-link {
-    color: #fff; /* Texto blanco */
+    color: #fff;
     font-weight: bold;
     font-size: 1.2rem;
     text-shadow: 1px 1px #d63384; /* Sombra para mejor legibilidad */
-    transition: color 0.3s ease; /* Transición suave */
+    transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ff4d6d; /* Color más vibrante al pasar el mouse */
+    color: #ff4d6d; /* Color más vibrante */
 }
 
 /* Hero Section */
@@ -174,176 +60,147 @@ body, html {
 
 .hero-image {
     width: 100%;
-    height: 400px; /* Ajusta la altura según tu preferencia */
-    object-fit: cover; /* Asegura que la imagen se ajuste proporcionalmente */
-    border-bottom: 5px solid #ff99c8; /* Línea decorativa debajo */
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 5px solid #ff99c8; /* Línea decorativa */
 }
 
 .hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centra el texto */
+    transform: translate(-50%, -50%);
     font-size: 2.5rem;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
     color: #d63384;
-    text-shadow: 2px 2px #ff99c8; /* Sombra para resaltar */
+    text-shadow: 2px 2px #ff99c8; /* Sombra */
     text-align: center;
 }
+
+/* Secciones Generales */
 .section {
+    padding: 20px;
+    margin-bottom: 30px;
     border: 5px solid #fecfef; /* Borde rosa claro */
     border-radius: 20px;
 }
 
-
-/* Sección Playa Con Con */
-.section {
-    padding: 20px;
-    margin-bottom: 30px;
+/* Títulos */
+.title, .subtitle {
+    text-align: center;
+    text-shadow: 1px 1px #ff99c8; /* Sombra suave */
 }
 
 .title {
-    text-align: center;
     font-size: 2.5rem;
-    color: #d63384; /* Rosa romántico */
-    text-shadow: 1px 1px #ff99c8; /* Sombra suave */
+    color: #d63384;
     margin-bottom: 10px;
 }
 
 .subtitle {
-    text-align: center;
     font-size: 1.8rem;
-    color: #ff4d6d; /* Rojo romántico */
-    text-shadow: 1px 1px #ffe6f0; /* Sombra más ligera */
+    color: #ff4d6d;
     margin-bottom: 15px;
 }
 
+/* Imágenes Generales */
 .image-container {
     display: flex;
-    justify-content: center; /* Centra la imagen */
+    justify-content: center;
     margin-top: 20px;
 }
 
-.playa-image {
-    width: 90%; /* Ocupa el 90% del ancho del contenedor */
-    max-width: 600px; /* Tamaño máximo para pantallas grandes */
-    border: 5px solid #d63384; /* Borde rosa */
-    border-radius: 20px; /* Bordes redondeados */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+.image-container img {
+    width: 90%;
+    max-width: 600px;
+    border: 5px solid #d63384;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efecto Hover */
-.playa-image:hover {
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+.image-container img:hover {
+    transform: scale(1.05); /* Efecto hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Sección Disco Ovo */
-.disco-image {
-    width: 90%; /* Ajusta la imagen al 90% del ancho del contenedor */
-    max-width: 600px; /* Tamaño máximo en pantallas grandes */
-    border: 5px solid #ff4d6d; /* Borde rojo romántico */
-    border-radius: 20px; /* Bordes redondeados */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
-}
-
-/* Efecto Hover */
-.disco-image:hover {
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
-}
-/* Carrusel de Jardín Botánico */
+/* Carruseles */
 .custom-container {
     background-color: #ffe6f0; /* Fondo romántico */
-    border: 5px solid #d63384; /* Borde rosa */
-    border-radius: 20px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    margin: 20px auto; /* Centrar el contenedor */
-    max-width: 600px; /* Ancho máximo */
-}
-
-.carousel-inner {
-    border-radius: 15px; /* Bordes redondeados para las imágenes */
-    overflow: hidden; /* Asegura que las esquinas redondeadas sean visibles */
-}
-
-.carousel-inner img {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor */
-    height: 400px; /* Fija una altura uniforme */
-    object-fit: cover; /* Mantiene la proporción de las imágenes recortando si es necesario */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #d63384; /* Íconos en color rosa */
-    border-radius: 50%; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interno */
-}
-/* Sección Videos bb */
-.section {
+    border: 5px solid #d63384;
+    border-radius: 20px;
     padding: 20px;
-    margin-bottom: 30px;
-}
-
-.custom-container {
-    background-color: #ffe6f0; /* Fondo romántico */
-    border: 5px solid #d63384; /* Borde rosa */
-    border-radius: 20px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    margin: 20px auto; /* Centrar el contenedor */
-    max-width: 800px; /* Ancho máximo */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 800px;
 }
 
 .carousel-inner {
-    border-radius: 15px; /* Bordes redondeados para los videos */
-    overflow: hidden; /* Asegura que las esquinas redondeadas sean visibles */
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-.carousel-inner video {
-    max-height: 400px; /* Altura máxima de los videos */
-    object-fit: cover; /* Recorta los videos manteniendo proporción */
-    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+.carousel-inner img, .carousel-inner video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: #d63384; /* Íconos en color rosa */
-    border-radius: 50%; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interno */
+    border-radius: 50%;
+    padding: 10px;
 }
 
-/* Título de la Sección */
-.subtitle {
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #d63384; /* Color rosa romántico */
-    margin-bottom: 15px;
-    text-shadow: 1px 1px #ff99c8; /* Sombra ligera en el texto */
-}
 /* Sección Rojito */
 .rojito-image {
-    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
-    height: auto; /* Mantiene las proporciones */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    border: 3px solid #d63384; /* Borde rosa */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto animado */
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #d63384;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efecto Hover */
 .rojito-image:hover {
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Asegura que el navbar y el menú estén encima de los elementos de fondo */
+.navbar-romantic {
+    position: relative; /* Define la posición relativa para controlarlo con z-index */
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
+
+.navbar-menu {
+    position: absolute; /* Hace que el menú sea independiente del flujo de la página */
+    background-color: rgba(255, 230, 240, 0.95); /* Fondo semitransparente para resaltar */
+    top: 100%; /* Asegura que el menú aparezca debajo del navbar */
+    left: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    z-index: 150; /* Más alto que la imagen o cualquier otro contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Enlaces del menú */
+.navbar-menu .nav-link {
+    color: #d63384; /* Color de texto romántico */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px #ff99c8; /* Sombra suave */
+}
+
+/* Efecto hover */
+.navbar-menu .nav-link:hover {
+    color: #ff4d6d; /* Color más vibrante */
 }
 
 
