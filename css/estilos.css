@@ -38,12 +38,13 @@ body, html {
   }
 
   .image-container img {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 300px; /* Ajusta la altura */
-    object-fit: cover; /* Mantiene la proporción recortando el exceso */
-    border: 1px solid #ddd; /* Opcional: Agrega un borde */
-    border-radius: 5px; /* Opcional: Redondea las esquinas */
+    margin: 10px; /* Espaciado entre imágenes */
+    width: 100%; /* Ajusta al contenedor */
+    height: 300px; /* Tamaño fijo */
+    object-fit: cover; /* Mantiene proporción */
 }
+
+
 
 
 
