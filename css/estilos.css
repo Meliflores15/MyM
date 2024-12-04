@@ -1,3 +1,35 @@
+
+/* Asegura que el navbar esté en el frente */
+.navbar-romantic {
+    position: relative; /* Define la posición para usar z-index */
+    z-index: 10; /* Trae el navbar al frente */
+}
+
+/* Fondo del menú desplegable */
+.navbar-menu {
+    background-color: rgba(255, 230, 240, 0.9); /* Fondo semitransparente para el menú */
+    position: absolute; /* Asegura que el menú se posicione en relación al navbar */
+    top: 100%; /* Hace que el menú aparezca debajo del navbar */
+    left: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    z-index: 20; /* Trae el menú aún más al frente */
+    padding: 10px 0; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Enlaces del menú desplegable */
+.navbar-menu .nav-link {
+    color: #d63384; /* Color del texto */
+    font-size: 1.2rem; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    text-align: center;
+}
+
+/* Hover en los enlaces */
+.navbar-menu .nav-link:hover {
+    color: #ff4d6d; /* Color más vibrante */
+}
 /* Estilo general */
 body, html {
     margin: 0;
@@ -313,7 +345,6 @@ body, html {
     transform: scale(1.05); /* Aumenta ligeramente el tamaño */
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
 }
-
 
 
 
