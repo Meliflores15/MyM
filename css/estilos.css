@@ -37,6 +37,14 @@ body, html {
     border-radius: 10px; /* Opcional: agrega bordes redondeados */
   }
 
+  .image-container img {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 300px; /* Ajusta la altura */
+    object-fit: cover; /* Mantiene la proporción recortando el exceso */
+    border: 1px solid #ddd; /* Opcional: Agrega un borde */
+    border-radius: 5px; /* Opcional: Redondea las esquinas */
+}
+
 
 
 
