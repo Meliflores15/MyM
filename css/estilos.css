@@ -203,6 +203,220 @@ body, html {
     color: #ff4d6d; /* Color más vibrante */
 }
 
+/* Contenedor de fondo rosado */
+.pink-background-container {
+    background-color: #ffe6f0; /* Fondo rosado */
+    border: 5px solid #ff99c8; /* Borde rosa */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+/* Imágenes dentro del contenedor rosado */
+.pink-background-container img {
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+/* Efecto hover en imágenes */
+.pink-background-container img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Sección de Fotos Locas */
+.crazy-photos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las fotos */
+    flex-wrap: wrap; /* Permite que las fotos se acomoden en filas en pantallas pequeñas */
+    margin-top: 20px;
+}
+
+.crazy-photo {
+    position: relative;
+    width: 200px; /* Ancho de cada foto */
+    height: 250px; /* Alto de cada foto */
+    overflow: hidden; /* Esconde el contenido que sobresale */
+    border: 5px dashed #ff4d6d; /* Borde divertido */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crazy-photo img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    height: 100%; /* Asegura que la imagen ocupe todo el alto */
+    object-fit: cover; /* Mantiene la proporción recortando si es necesario */
+}
+
+.crazy-photo:hover {
+    transform: rotate(-5deg) scale(1.1); /* Gira y agranda la foto ligeramente */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px; /* Ubica el texto en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 230, 240, 0.9); /* Fondo semitransparente */
+    color: #d63384; /* Color del texto */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+/* Sección destacada para la presentación a mamá */
+.highlight-box {
+    background-color: #ffe6f0; /* Fondo rosa claro */
+    border: 5px solid #d63384; /* Borde rosa fuerte */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 20px auto; /* Centra el contenedor */
+    max-width: 600px; /* Ancho máximo */
+}
+
+.highlight-title {
+    font-family: 'Dancing Script', cursive; /* Fuente romántica */
+    font-size: 2rem; /* Tamaño del texto */
+    color: #d63384; /* Rosa fuerte */
+    text-shadow: 1px 1px #ff99c8; /* Sombra suave */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.highlight-text {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente divertida */
+    font-size: 1.2rem; /* Tamaño del texto */
+    color: #ff4d6d; /* Rojo romántico */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.highlight-image {
+    width: 90%; /* Ajusta la imagen al 90% del contenedor */
+    max-width: 500px; /* Tamaño máximo */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border: 5px solid #ff4d6d; /* Borde rojo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+/* Efecto Hover en la imagen */
+.highlight-image:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Sección destacada para los detalles */
+.image-pair-container {
+    display: flex; /* Muestra las imágenes en una fila */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    gap: 20px; /* Espaciado entre las imágenes */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.image-item {
+    width: 45%; /* Cada imagen ocupa el 45% del contenedor */
+    display: flex;
+    justify-content: center;
+}
+
+.detail-image {
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    border-radius: 15px; /* Bordes redondeados */
+    border: 5px solid #d63384; /* Borde rosa */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+/* Efecto Hover en las imágenes */
+.detail-image:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+.highlight-box {
+    background-color: #ffe6f0; /* Fondo rosa claro */
+    border: 5px solid #d63384; /* Borde rosa fuerte */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 20px auto; /* Centra el contenedor */
+    max-width: 800px; /* Ancho máximo */
+}
+
+.highlight-title {
+    font-family: 'Dancing Script', cursive; /* Fuente romántica */
+    font-size: 2rem; /* Tamaño del texto */
+    color: #d63384; /* Rosa fuerte */
+    text-shadow: 1px 1px #ff99c8; /* Sombra suave */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Caja para la frase y los videos */
+.safe-place-box {
+    background-color: #ffe6f0; /* Fondo rosa claro */
+    border: 5px solid #d63384; /* Borde rosa fuerte */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 30px; /* Espaciado interno */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 20px auto; /* Centra la sección */
+    max-width: 800px; /* Ancho máximo */
+    text-align: center; /* Centra el contenido */
+}
+
+/* Frase destacada */
+.safe-place-title {
+    font-family: 'Dancing Script', cursive; /* Fuente romántica */
+    font-size: 2rem; /* Tamaño del texto */
+    color: #d63384; /* Rosa fuerte */
+    text-shadow: 1px 1px #ff99c8; /* Sombra suave */
+    margin-bottom: 30px; /* Espaciado inferior */
+}
+
+/* Contenedor de los videos */
+.video-container {
+    display: flex; /* Muestra los videos en una fila */
+    flex-wrap: wrap; /* Permite que los videos se ajusten si no hay espacio */
+    justify-content: center; /* Centra los videos horizontalmente */
+    gap: 20px; /* Espaciado entre los videos */
+}
+
+/* Videos individuales */
+.video-item {
+    flex: 1 1 45%; /* Cada video ocupa el 45% del ancho */
+    max-width: 400px; /* Tamaño máximo en pantallas grandes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* Fondo blanco */
+    border: 3px solid #d63384; /* Borde rosa */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    padding: 10px; /* Espaciado interno */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+/* Efecto Hover en los videos */
+.video-item:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Estilo de los videos */
+.safe-video {
+    width: 100%; /* Ajusta el video al ancho del contenedor */
+    height: auto; /* Mantiene las proporciones */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que los bordes redondeados sean visibles */
+}
 
 
 
