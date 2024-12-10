@@ -556,5 +556,351 @@ body, html {
     transform: scale(1.1); /* Aumenta ligeramente el tamaño */
 }
 
+/* Sección única de videos */
+.unique-videos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Diseño responsivo */
+    gap: 20px; /* Espaciado entre los videos */
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffe6f0, #ff99c8); /* Fondo degradado */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilo de cada video */
+.unique-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 3px solid #ff4d6d; /* Borde rosa */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background-color: #fff; /* Fondo blanco */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover */
+.unique-video:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Estilo de los videos */
+.unique-video video {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene las proporciones */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espaciado con el texto */
+}
+
+/* Título de la sección */
+.unique-videos-title {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    color: #d63384; /* Rosa romántico */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #ff99c8; /* Sombra ligera */
+}
+
+/* Subtítulos de los videos */
+.unique-caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d63384;
+    text-align: center;
+}
+
+/* Sección del carrusel */
+#photo-carousel-section {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffe6f0, #ff99c8); /* Fondo degradado */
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 30px auto;
+    max-width: 800px; /* Ancho máximo */
+}
+
+/* Título del carrusel */
+.carousel-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d63384;
+    text-shadow: 1px 1px #ff99c8;
+    margin-bottom: 20px;
+}
+
+/* Estilo de las fotos del carrusel */
+.carousel-photo {
+    max-height: 400px; /* Altura máxima */
+    object-fit: cover; /* Ajusta la imagen recortando si es necesario */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+/* Botones de navegación */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #d63384; /* Color rosa */
+    border-radius: 50%; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+}
+/* Sección del carrusel */
+#crazy-moments {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffe6f0, #ff9a9e); /* Fondo degradado */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 30px auto;
+    max-width: 900px; /* Ancho máximo */
+}
+
+/* Título de la sección */
+.crazy-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d63384;
+    text-shadow: 1px 1px #ff99c8; /* Sombra suave */
+    margin-bottom: 20px;
+}
+
+/* Contenedor del video */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe6f0; /* Fondo suave */
+    border: 5px solid #d63384; /* Borde rosa */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo de los videos */
+.crazy-video {
+    width: 100%;
+    max-width: 800px; /* Ancho máximo de los videos */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Botones de navegación */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #d63384; /* Íconos en color rosa */
+    border-radius: 50%; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+}
 
 
+/* Sección de momentos únicos */
+#unique-moments {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffe6f0, #ff9a9e); /* Fondo degradado */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin: 30px auto;
+    max-width: 900px; /* Ancho máximo */
+}
+
+/* Título de la sección */
+.unique-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d63384;
+    text-shadow: 1px 1px #ff99c8;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de fotos */
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffe6f0; /* Fondo suave */
+    border: 5px solid #d63384; /* Borde rosa */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Imágenes únicas */
+.unique-photo {
+    width: 100%;
+    max-width: 600px;
+    height: 400px; /* Altura uniforme */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+/* Leyenda de las fotos */
+.photo-caption {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 1.2rem;
+    color: #d63384;
+    margin-top: 10px;
+}
+
+/* Botones de navegación */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #d63384;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Sección de Amor */
+.love-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d63384; /* Rosa romántico */
+    text-shadow: 2px 2px #ff99c8; /* Sombra suave */
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive; /* Fuente romántica */
+}
+
+.love-photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #ffe6f0; /* Fondo romántico */
+    border: 5px solid #d63384; /* Borde rosa */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.love-photo {
+    width: 90%; /* Ajusta el tamaño de la foto */
+    max-width: 500px; /* Tamaño máximo */
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    
+}
+
+/* Sección Doki */
+.doki-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff4d6d; /* Rojo romántico */
+    text-shadow: 2px 2px #ff99c8; /* Sombra suave */
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive; /* Fuente romántica */
+}
+
+.doki-photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #ffe6f0; /* Fondo romántico */
+    border: 5px solid #d63384; /* Borde rosa */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.doki-photo {
+    width: 90%; /* Ajusta el tamaño de la foto */
+    max-width: 500px; /* Tamaño máximo */
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    margin-bottom: 15px;
+}
+
+.doki-caption {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #d63384; /* Texto rosa */
+    font-weight: bold;
+}
+
+/* Sección Baby Shower */
+.babyshower-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4A90E2; /* Azul pastel */
+    text-shadow: 2px 2px #A4C8F0; /* Sombra suave */
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive; /* Fuente encantadora */
+}
+
+.babyshower-photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #EAF7FF; /* Fondo azul claro */
+    border: 5px solid #4A90E2; /* Borde azul */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.babyshower-photo {
+    width: 90%; /* Ajusta el tamaño de la foto */
+    max-width: 500px; /* Tamaño máximo */
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    margin-bottom: 15px;
+}
+
+.babyshower-caption {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4A90E2; /* Texto azul */
+    font-weight: bold;
+}
+
+/* Sección Mensaje de Amor */
+.love-message-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d63384; /* Rosa romántico */
+    text-shadow: 2px 2px #ff99c8; /* Sombra suave */
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive; /* Fuente romántica */
+}
+
+.love-message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffe6f0; /* Fondo romántico */
+    border: 5px solid #d63384; /* Borde rosa */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.love-message-text {
+    font-size: 1.2rem;
+    color: #d63384; /* Texto rosa */
+    margin-bottom: 20px;
+    line-height: 1.8; /* Espaciado entre líneas */
+    font-family: 'Comic Sans MS', cursive; /* Fuente divertida */
+}
+
+.love-message-photo {
+    width: 90%; /* Ajusta el tamaño de la foto */
+    max-width: 500px; /* Tamaño máximo */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    margin-top: 20px;
+}
